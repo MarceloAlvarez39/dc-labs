@@ -24,7 +24,7 @@ import (
 //!+sema
 // tokens is a counting semaphore used to
 // enforce a limit of 20 concurrent requests.
-var tokens = make(chan struct{}, 30)
+var tokens = make(chan struct{}, 20)
 
 // Creating a struct to get:
 //   links: the urls of a particular search
